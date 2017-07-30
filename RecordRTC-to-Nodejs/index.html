@@ -154,7 +154,10 @@
             function captureUserMedia(success_callback) {
                 var session = {
                     audio: true,
-                    video: true
+                      video: {
+        width: { min: 320, ideal: 480, max: 480 },
+        height: { min: 240, ideal: 320, max: 320 },
+    }
                 };
                 
                 navigator.getUserMedia(session, success_callback, function(error) {
