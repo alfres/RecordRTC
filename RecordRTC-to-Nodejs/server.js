@@ -6,7 +6,7 @@ var server = require('http'),
     path = require('path'),
     fs = require('fs');
 
-var port = 9001;
+var port = 9000;
 
 function serverHandler(request, response) {
     var uri = url.parse(request.url).pathname,
